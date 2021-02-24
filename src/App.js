@@ -10,7 +10,13 @@ export default function App() {
   const [list, setList] = useState([]);
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('hello');
+    try {
+      let colors = new Values(color).all(20);
+      console.log(colors);
+    } catch (error) {
+      setError(true);
+      console.log(error);
+    }
   }
   return (
     <div className="App">
@@ -20,6 +26,7 @@ export default function App() {
           <input type="text" 
             value={color}
             placeholder="#f15025" 
+            className={ `${ error ? 'error' : null }` }
             onChange={(e) => setColor(e.target.value)} />
           <button type="submit">Generate</button>
         </form>
