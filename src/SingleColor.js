@@ -19,7 +19,7 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
       onClick={async () => {
         try {
           setAlert(true)
-          await navigator.clipboard.writeText('hello')
+          await navigator.clipboard.writeText(hexValue)
         } catch (err) {
           console.log(err)
         }
