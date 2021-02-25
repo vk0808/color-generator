@@ -5,7 +5,7 @@ const SingleColor = ({ rgb, weight, index, hexColor, length }) => {
   const [alert, setAlert] = useState(false);
   const bcg = rgb.join(",");
   const hexValue = `#${hexColor}`;
-  console.log("length:", length);
+  // console.log("length:", length);
 
   useEffect(() => {
     const timeout = setTimeout(() => {

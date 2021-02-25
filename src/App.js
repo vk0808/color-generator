@@ -66,7 +66,6 @@ export default function App() {
     color === ""
       ? setList(new Values("#ff0000").all(value))
       : setList(new Values(color).all(value));
-    // console.log(list, rangeVal);
   };
   return (
     <div className="App">
