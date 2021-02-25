@@ -37,3 +37,6 @@ Along with React dependencies, I used:
 
 - [Values.js](https://github.com/noeldelgado/values.js) to get the hexacolor format.
 - [Styled-components](https://github.com/styled-components/styled-components) to style slider
+
+## License & Copyright
+Licensed under [MIT](LICENSE)
