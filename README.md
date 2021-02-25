@@ -4,8 +4,8 @@ Created with CodeSandbox
 
 <br><br>
 ![](https://img.shields.io/badge/Status-Complete-green.svg)
-<br><br>
-To view demo [Clicke here](https://csb-wvg3k.netlify.app/) <br>
+<br>
+To view demo [Click here](https://csb-wvg3k.netlify.app/) <br>
 To view on CodeSandbox [Click here](https://codesandbox.io/s/github/vk0808/color-generator)
 <br><br>
 
