@@ -59,7 +59,7 @@ export default function App() {
       console.log(error);
     }
   };
-  handleChange = (e) => {
+  const handleChange = (e) => {
     const value = parseInt(e.target.value);
     setRangeVal(value);
     console.log(value, rangeVal);
