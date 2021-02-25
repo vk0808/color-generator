@@ -4,7 +4,12 @@ import SingleColor from "./SingleColor";
 
 import styled from "styled-components";
 
-const Slider = styled.input.attrs({ type: "range", min: "1", max: "30" })`
+const Slider = styled.input.attrs({
+  type: "range",
+  min: "1",
+  max: "30",
+  title: "Choose Shades"
+})`
   -webkit-appearance: none;
   -moz-appearance: none;
   outline: 0;
@@ -61,24 +66,28 @@ export default function App() {
     color === ""
       ? setList(new Values("#ff0000").all(value))
       : setList(new Values(color).all(value));
-    console.log(list, rangeVal);
+    // console.log(list, rangeVal);
   };
   return (
-    <div>
+    <div className="App">
+      <h3>color generator</h3>
       <section className="container">
-        <h3>color generator</h3>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
             value={color}
+            title="Enter color"
             placeholder="#ff0000, red, rgb(255, 0, 0)"
             className={`${error ? "error" : null}`}
-            onChange={(e) => setColor(e.target.value)}
+            onChange={(e) => {
+              setColor(e.target.value);
+              setError(false);
+            }}
           />
           <button className="btn" type="submit">
             Generate
           </button>
-          <div>
+          <div className="slider">
             <Slider value={rangeVal} onChange={handleChange} />
             <span>{rangeVal}</span>
           </div>
