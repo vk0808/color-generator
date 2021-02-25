@@ -71,6 +71,7 @@ export default function App() {
   return (
     <div className="App">
       <h3>color generator</h3>
+      <p className="sub-title">Click to copy value in HEX</p>
       <section className="container">
         <form onSubmit={handleSubmit}>
           <input

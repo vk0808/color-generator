@@ -155,6 +155,10 @@ Color Generator
 .App h3 {
   margin: 2rem 0;
 }
+.App .sub-title {
+  font-style: italic;
+  letter-spacing: 1px;
+}
 
 input {
   border-color: transparent;
