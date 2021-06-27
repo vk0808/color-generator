@@ -3,6 +3,7 @@ import Values from "values.js";
 import SingleColor from "./SingleColor";
 
 import styled from "styled-components";
+import "./styles.css";
 
 const Slider = styled.input.attrs({
   type: "range",
@@ -41,7 +42,6 @@ const Slider = styled.input.attrs({
   }
 `;
 
-import "./styles.css";
 
 export default function App() {
   const [color, setColor] = useState("");
